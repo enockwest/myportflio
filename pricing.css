@@ -1,0 +1,100 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #666262;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.pricing-container {
+    width: 100%;
+    padding: 20px;
+}
+
+.pricing-table {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Card Styles */
+.pricing-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(5, 240, 228, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+}
+
+.pricing-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.pricing-price {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.features {
+    list-style-type: none;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.features li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Button Styles */
+.pricing-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pricing-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Color Variants for Cards */
+.basic {
+    background-color: #f1f8ff;
+}
+
+.standard {
+    background-color: #fffbf0;
+}
+
+.premium {
+    background-color: #f4f8f4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .pricing-table {
+        grid-template-columns: 1fr;
+    }
+}

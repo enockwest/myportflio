@@ -1,0 +1,144 @@
+ /* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Container */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+  }
+  
+  /* Home Section */
+  .home {
+    text-align: center;
+    background: linear-gradient(to right, #ff9966, #ff5e62);
+    color: white;
+    padding: 4rem 2rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+  }
+  
+  .home h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 800;
+  }
+  
+  .home h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  
+  .home p {
+    font-size: 1.1rem;
+  }
+  
+  /* Products Section */
+  .products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1.5rem;
+    margin-top: 3rem;
+    text-align: center;
+  }
+  
+  .product {
+    background: linear-gradient(to top right, #8360c3, #2ebf91);
+    padding: 2rem;
+    height: 500px;
+    border-radius: 12px;
+    color: white;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+  }
+  
+  .product:hover {
+    transform: translateY(-5px);
+  }
+  .a1{
+    background-image: url("IMG-20241112-WA0031.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .a2{
+    background-image: url("IMG-20240323-WA0028.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .a3{
+    background-image: url("IMG-20241112-WA0019.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .a4{
+    background-image: url("IMG-20241112-WA0014.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  
+  button {
+    background-color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  button a {
+    text-decoration: none;
+    color: #2ebf91;
+  }
+  
+  button:hover {
+    background-color: #2ebf91;
+  }
+  
+  button:hover a {
+    color: white;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+    margin-top: 3rem;
+    border-top: 5px solid #ff5e62;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .home h1 {
+      font-size: 2rem;
+    }
+  
+    .home h3 {
+      font-size: 1.2rem;
+    }
+  
+    .products {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+

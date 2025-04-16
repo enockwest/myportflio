@@ -1,0 +1,74 @@
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url("FB_IMG_1688410233564.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.login-container {
+    background-color: rgba(224, 210, 210, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(14, 13, 13, 0.6);
+    width: 300px;
+    transition: 3s;
+}
+
+.login-container:hover{
+    width: 100%;
+
+}
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: calc(100% - 12px); /* Adjust for padding and border */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #0056b3;
+}
+@media only screen and (orientation: landscape){
+    body{
+        background-image: url("FB_IMG_1688410281558.jpg");
+    }
+    .login-container{
+        width: 400px;
+    }
+    .login-container:hover{
+        height: 400px;
+        background-color: rgba(121, 34, 34, 0.5);
+        width: 300px;
+    }
+}
